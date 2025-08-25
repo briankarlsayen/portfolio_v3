@@ -1,1 +1,65 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-font: black;
+  --color-primary-font-dark: white;
+  --color-primary: #f4f4f5; /* light background */
+  --color-secondary: #fafafa; /* secondary background */
+  --color-primary-dark: #1f2937; /* dark mode background */
+  --color-secondary-dark: #18181b; /* dark mode background */
+  --color-btn-primary: #004fd6;
+  --color-btn-primary-hover: #003ca3;
+  --color-btn-danger: #d61d00;
+  --color-btn-danger-hover: #a31600;
+  --color-btn-primary-dark: #d68800;
+  --color-btn-primary-dark-hover: #a36700;
+}
+/* 
+--color-1: #004FD6;
+--color-2: #D600B9;
+--color-3: #D68800;
+--color-4: #00D61D;
+--red: #D61D00
+*/
+
+@layer base {
+  h1 {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary-font dark:text-primary-font-dark;
+  }
+  h2 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary-font dark:text-primary-font-dark;
+  }
+  h3 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary-font dark:text-primary-font-dark;
+  }
+  h4 {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary-font dark:text-primary-font-dark;
+  }
+  p,
+  li {
+    @apply text-sm sm:text-base text-primary-font dark:text-primary-font-dark;
+  }
+  div {
+    @apply bg-primary dark:bg-primary-dark;
+  }
+}
+
+@layer components {
+  .hero-text {
+    @apply text-primary-font dark:text-primary-font-dark text-[5rem];
+  }
+  .app-bg {
+    @apply bg-white dark:bg-gray-600;
+  }
+  .app-text {
+    @apply text-black dark:text-gray-200;
+  }
+  .btn {
+    @apply rounded-lg px-4 py-2 transition-colors duration-200 cursor-pointer;
+  }
+  .btn-primary {
+    @apply bg-btn-primary hover:bg-btn-primary-hover dark:bg-btn-primary-dark dark:hover:bg-btn-primary-dark-hover text-primary-font-dark;
+  }
+}
