@@ -41,9 +41,9 @@
   li {
     @apply text-sm sm:text-base text-primary-font dark:text-primary-font-dark;
   }
-  div {
+  /* div {
     @apply bg-primary dark:bg-primary-dark;
-  }
+  } */
 }
 
 @layer components {
@@ -61,5 +61,8 @@
   }
   .btn-primary {
     @apply bg-btn-primary hover:bg-btn-primary-hover dark:bg-btn-primary-dark dark:hover:bg-btn-primary-dark-hover text-primary-font-dark;
+  }
+  .input-primary {
+    @apply w-full px-4 border border-gray-300 rounded-md focus:outline-none text-primary-font dark:text-primary-font-dark;
   }
 }
