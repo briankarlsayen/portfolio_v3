@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary-font: black;
-  --color-primary-font-dark: white;
+  --color-primary-font: #000000;
+  --color-primary-font-dark: #ffffff;
   --color-primary: #f4f4f5; /* light background */
   --color-secondary: #fafafa; /* secondary background */
   --color-primary-dark: #1f2937; /* dark mode background */
@@ -57,12 +57,30 @@
     @apply text-black dark:text-gray-200;
   }
   .btn {
-    @apply rounded-lg px-4 py-2 transition-colors duration-200 cursor-pointer;
+    @apply rounded-lg px-4 py-2 transition-colors duration-200 cursor-pointer disabled:cursor-not-allowed;
   }
   .btn-primary {
-    @apply bg-btn-primary hover:bg-btn-primary-hover dark:bg-btn-primary-dark dark:hover:bg-btn-primary-dark-hover text-primary-font-dark;
+    @apply disabled:bg-gray-400 hover:disabled:bg-gray-400  bg-btn-primary hover:bg-btn-primary-hover dark:bg-btn-primary-dark dark:hover:bg-btn-primary-dark-hover text-primary-font-dark;
   }
   .input-primary {
-    @apply w-full px-4 border border-gray-300 rounded-md focus:outline-none text-primary-font dark:text-primary-font-dark;
+    @apply w-full px-4 border border-gray-300 rounded-md focus:outline-none text-primary-font dark:text-primary-font-dark disabled:text-gray-400 disabled:cursor-not-allowed disabled:dark:bg-gray-700 disabled:bg-gray-200;
   }
+
+  .nav-items {
+    @apply text-primary-font dark:text-primary-font-dark hover:text-[#303030] hover:dark:text-[#B6B6B6];
+  }
+  .selected-text {
+    @apply text-[#303030] dark:text-[#B6B6B6];
+  }
+}
+
+.project-title {
+  @apply flex items-center gap-2 text-primary-font dark:text-primary-font-dark hover:text-[#303030] hover:dark:text-[#B6B6B6] w-fit;
+}
+.project-title > span {
+  @apply transform transition-transform duration-150 group-hover:rotate-45;
+}
+
+.social-icon {
+  @apply p-2 text-3xl text-primary-font dark:text-primary-font-dark hover:text-[#303030] hover:dark:text-[#B6B6B6] cursor-pointer;
 }

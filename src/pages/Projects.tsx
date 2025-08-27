@@ -1,7 +1,13 @@
-import React from "react";
+import RecentProjects from "../components/RecentProjects";
 
 function Projects() {
-  return <div>Projects</div>;
+  return (
+    <div className="flex flex-col items-center">
+      <div className="max-w-7xl w-full">
+        <RecentProjects />
+      </div>
+    </div>
+  );
 }
 
 export default Projects;

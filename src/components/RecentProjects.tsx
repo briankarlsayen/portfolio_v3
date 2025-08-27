@@ -1,3 +1,4 @@
+import { BsCursor } from "react-icons/bs";
 interface IProject {
   name: string;
   description: string;
@@ -5,6 +6,7 @@ interface IProject {
   imageSrc: string | string[];
   imagePos?: string;
   techs: string[];
+  tag: string;
 }
 
 function RecentProjects() {
@@ -16,6 +18,7 @@ function RecentProjects() {
       website: "https://stone-key.web.app/",
       imageSrc: "./images/stonekey-img.png",
       techs: ["ReactJS", "Typescript", "Redux", "MongoDB", "PWA", "NodeJS"],
+      tag: "Password Manager",
     },
     {
       name: "Urbanik",
@@ -25,6 +28,7 @@ function RecentProjects() {
       imageSrc: "./images/urbanik-img.png",
       imagePos: "object-left",
       techs: ["NextJS", "Typescript", "NodeJS", "Paypal"],
+      tag: "Eccomerce",
     },
     {
       name: "Frugio",
@@ -33,6 +37,7 @@ function RecentProjects() {
       website: "https://github.com/briankarlsayen/frugio",
       imageSrc: ["./images/frugio-img.png", "./images/frugio-img2.png"],
       techs: ["ReactNative", "SQLite"],
+      tag: "Budget tracking",
     },
     {
       name: "Silong",
@@ -43,6 +48,7 @@ function RecentProjects() {
       imageSrc: "./images/silong-img.png",
       imagePos: "object-left",
       techs: ["VueJS", "Typescript", "MongoDB", "Django"],
+      tag: "Inventory & Stock Monitoring",
     },
   ];
 
@@ -65,9 +71,17 @@ const ProjectCard = ({ project, bgColor }: any) => {
   return (
     <div className={`grid grid-cols-5 gap-4 pt-12 pb-32 ${bg}`}>
       <div className="col-span-2 flex flex-col gap-2">
+        <p className="uppercase text-xs opacity-70 mb-[-4px]">{project?.tag}</p>
         <h4 className="pb-4">
-          <a href={project?.website} target="__blank">
+          <a
+            href={project?.website}
+            target="__blank"
+            className="project-title group"
+          >
             {project?.name}
+            <span>
+              <BsCursor />
+            </span>
           </a>
         </h4>
         <p>{project?.description}</p>

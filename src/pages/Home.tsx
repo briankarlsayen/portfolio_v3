@@ -1,10 +1,10 @@
-import Contact from "../components/Contact";
+import Contact from "../components/ContactForm";
 import RecentProjects from "../components/RecentProjects";
 
 function Home() {
   return (
     <div className="min-h-screen">
-      <div className="flex flex-col items-center ">
+      <div className="flex flex-col items-center">
         <div className="max-w-7xl w-full">
           <div id="hero" className="h-screen w-full">
             <div className="flex flex-col gap-2 pt-52">
