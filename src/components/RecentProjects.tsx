@@ -1,56 +1,58 @@
 import { BsCursor } from "react-icons/bs";
-interface IProject {
-  name: string;
-  description: string;
-  website: string;
-  imageSrc: string | string[];
-  imagePos?: string;
-  techs: string[];
-  tag: string;
-}
+import projects from "../project.json";
+
+// interface IProject {
+//   name: string;
+//   description: string;
+//   website: string;
+//   imageSrc: string | string[];
+//   imagePos?: string;
+//   techs: string[];
+//   tag: string;
+// }
 
 function RecentProjects() {
-  const projects: IProject[] = [
-    {
-      name: "Stonekey",
-      description:
-        "Securely store and manage all your application passwords using advanced encryption to protect your data, ensuring privacy and security at all times.",
-      website: "https://stone-key.web.app/",
-      imageSrc: "./images/stonekey-img.png",
-      techs: ["ReactJS", "Typescript", "Redux", "MongoDB", "PWA", "NodeJS"],
-      tag: "Password Manager",
-    },
-    {
-      name: "Urbanik",
-      description:
-        "A fast, secure, and SEO-friendly eCommerce platform built with Next.js and server-side rendering. Enjoy seamless shopping with dynamic product listings, lightning-fast performance, and optimized search visibility. Designed for scalability, this application delivers a smooth user experience while keeping your online store efficient and future-ready.",
-      website: "https://next-shop-livid.vercel.app/",
-      imageSrc: "./images/urbanik-img.png",
-      imagePos: "object-left",
-      techs: ["NextJS", "Typescript", "NodeJS", "Paypal"],
-      tag: "Eccomerce",
-    },
-    {
-      name: "Frugio",
-      description:
-        "Track your expenses effortlessly and stay in control of your finances with our budget tracking app. Easy to visualize spending with intuitive charts. Simple, secure, and designed to help you achieve your financial goals anytime, anywhere.",
-      website: "https://github.com/briankarlsayen/frugio",
-      imageSrc: ["./images/frugio-img.png", "./images/frugio-img2.png"],
-      techs: ["ReactNative", "SQLite"],
-      tag: "Budget tracking",
-    },
-    {
-      name: "Silong",
-      description:
-        "Manage your inventory and track sales effortlessly with our powerful web application. Monitor stock levels, record transactions, and generate real-time reports to streamline your business operations. Simple, efficient, and accessible from anywhere, it’s the ultimate tool to keep your business organized and profitable.",
-      website:
-        "gAAAAABorYftl2QEWYPwII-zjJAIeos4AhEZ0HW1GAE5Vix1iunA0shkvGl0O5QxNZdnEulb5phQtuFMfjTHOTRCiE1PefySH5iVUzTk7Nx9eDBtYQ_qDTgFYMsPRD4T45DqRhmqzjzO5YLdzn705M7-_hY5GrPraA==",
-      imageSrc: "./images/silong-img.png",
-      imagePos: "object-left",
-      techs: ["VueJS", "Typescript", "MongoDB", "Django"],
-      tag: "Inventory & Stock Monitoring",
-    },
-  ];
+  // const projects: IProject[] = [
+  //   {
+  //     name: "Stonekey",
+  //     description:
+  //       "Securely store and manage all your application passwords using advanced encryption to protect your data, ensuring privacy and security at all times.",
+  //     website: "https://stone-key.web.app/",
+  //     imageSrc: "./images/stonekey-img.png",
+  //     techs: ["ReactJS", "Typescript", "Redux", "MongoDB", "PWA", "NodeJS"],
+  //     tag: "Password Manager",
+  //   },
+  //   {
+  //     name: "Urbanik",
+  //     description:
+  //       "A fast, secure, and SEO-friendly eCommerce platform built with Next.js and server-side rendering. Enjoy seamless shopping with dynamic product listings, lightning-fast performance, and optimized search visibility. Designed for scalability, this application delivers a smooth user experience while keeping your online store efficient and future-ready.",
+  //     website: "https://next-shop-livid.vercel.app/",
+  //     imageSrc: "./images/urbanik-img.png",
+  //     imagePos: "object-left",
+  //     techs: ["NextJS", "Typescript", "NodeJS", "Paypal"],
+  //     tag: "Eccomerce",
+  //   },
+  //   {
+  //     name: "Frugio",
+  //     description:
+  //       "Track your expenses effortlessly and stay in control of your finances with our budget tracking app. Easy to visualize spending with intuitive charts. Simple, secure, and designed to help you achieve your financial goals anytime, anywhere.",
+  //     website: "https://github.com/briankarlsayen/frugio",
+  //     imageSrc: ["./images/frugio-img.png", "./images/frugio-img2.png"],
+  //     techs: ["ReactNative", "SQLite"],
+  //     tag: "Budget tracking",
+  //   },
+  //   {
+  //     name: "Silong",
+  //     description:
+  //       "Manage your inventory and track sales effortlessly with our powerful web application. Monitor stock levels, record transactions, and generate real-time reports to streamline your business operations. Simple, efficient, and accessible from anywhere, it’s the ultimate tool to keep your business organized and profitable.",
+  //     website:
+  //       "gAAAAABorYftl2QEWYPwII-zjJAIeos4AhEZ0HW1GAE5Vix1iunA0shkvGl0O5QxNZdnEulb5phQtuFMfjTHOTRCiE1PefySH5iVUzTk7Nx9eDBtYQ_qDTgFYMsPRD4T45DqRhmqzjzO5YLdzn705M7-_hY5GrPraA==",
+  //     imageSrc: "./images/silong-img.png",
+  //     imagePos: "object-left",
+  //     techs: ["VueJS", "Typescript", "MongoDB", "Django"],
+  //     tag: "Inventory & Stock Monitoring",
+  //   },
+  // ];
 
   return (
     <div id="recent-projects" className="pt-20 w-full">
