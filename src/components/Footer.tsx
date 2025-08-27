@@ -1,5 +1,3 @@
-import React from "react";
-
 function Footer() {
   return (
     <div className="pb-12 pt-32 text-center">
