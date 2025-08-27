@@ -48,7 +48,7 @@
 
 @layer components {
   .hero-text {
-    @apply text-primary-font dark:text-primary-font-dark text-[5rem];
+    @apply text-primary-font dark:text-primary-font-dark md:text-[5rem] sm:text-[3.5rem] text-[2rem];
   }
   .app-bg {
     @apply bg-white dark:bg-gray-600;
@@ -67,20 +67,20 @@
   }
 
   .nav-items {
-    @apply text-primary-font dark:text-primary-font-dark hover:text-[#303030] hover:dark:text-[#B6B6B6];
+    @apply text-primary-font dark:text-primary-font-dark hover:text-[#868686] hover:dark:text-[#919191];
   }
   .selected-text {
-    @apply text-[#303030] dark:text-[#B6B6B6];
+    @apply text-[#868686] dark:text-[#919191];
   }
 }
 
 .project-title {
-  @apply flex items-center gap-2 text-primary-font dark:text-primary-font-dark hover:text-[#303030] hover:dark:text-[#B6B6B6] w-fit;
+  @apply flex items-center gap-2 text-primary-font dark:text-primary-font-dark hover:text-[#868686] hover:dark:text-[#919191] w-fit;
 }
 .project-title > span {
   @apply transform transition-transform duration-150 group-hover:rotate-45;
 }
 
 .social-icon {
-  @apply p-2 text-3xl text-primary-font dark:text-primary-font-dark hover:text-[#303030] hover:dark:text-[#B6B6B6] cursor-pointer;
+  @apply p-2 text-3xl text-primary-font dark:text-primary-font-dark hover:text-[#868686] hover:dark:text-[#919191] cursor-pointer transform transition-transform duration-600  hover:rotate-360 ease-[cubic-bezier(0.55,0.05,0.795,0.035)];
 }
