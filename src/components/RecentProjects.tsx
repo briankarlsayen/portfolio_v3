@@ -55,14 +55,14 @@ const ProjectCard = ({ project, bgColor }: any) => {
           project?.imageSrc.map((image: string) => (
             <img
               key={image}
-              className="lg:h-[32rem] md:h-[25rem] h-[16rem] object-cover"
+              className="lg:h-[32rem] md:h-[25rem] h-[16rem] object-cover lg:shadow-2xl shadow-gray-700"
               src={image}
               alt="stone key dashboard"
             />
           ))
         ) : (
           <img
-            className={`lg:h-[32rem] md:h-[25rem] h-[16rem] object-cover ${
+            className={`lg:h-[32rem] md:h-[25rem] h-[16rem] object-cover lg:shadow-2xl shadow-md shadow-gray-700 ${
               project?.imagePos ?? ""
             }`}
             src={project?.imageSrc}
