@@ -4,7 +4,15 @@
     "description": "Securely store and manage all your application passwords using advanced encryption to protect your data, ensuring privacy and security at all times.",
     "website": "https://stone-key.web.app/",
     "imageSrc": "./images/stonekey-img.png",
-    "techs": ["ReactJS", "Typescript", "Redux", "MongoDB", "PWA", "NodeJS"],
+    "techs": [
+      "ReactJS",
+      "Typescript",
+      "MUI",
+      "Redux",
+      "MongoDB",
+      "PWA",
+      "NodeJS"
+    ],
     "tag": "Password Manager"
   },
   {
@@ -13,7 +21,7 @@
     "website": "https://next-shop-livid.vercel.app/",
     "imageSrc": "./images/urbanik-img.png",
     "imagePos": "object-left",
-    "techs": ["NextJS", "Typescript", "NodeJS", "Paypal"],
+    "techs": ["NextJS", "Typescript", "NodeJS", "Zustand", "Mapbox", "Paypal"],
     "tag": "Eccomerce"
   },
   {
@@ -30,7 +38,14 @@
     "website": "https://inventory-app-fe-orpin.vercel.app?auth=gAAAAABorYftl2QEWYPwII-zjJAIeos4AhEZ0HW1GAE5Vix1iunA0shkvGl0O5QxNZdnEulb5phQtuFMfjTHOTRCiE1PefySH5iVUzTk7Nx9eDBtYQ_qDTgFYMsPRD4T45DqRhmqzjzO5YLdzn705M7-_hY5GrPraA==",
     "imageSrc": "./images/silong-img.png",
     "imagePos": "object-left",
-    "techs": ["VueJS", "Typescript", "MongoDB", "Django"],
+    "techs": [
+      "VueJS",
+      "Typescript",
+      "Pinia",
+      "TailwindCSS",
+      "MongoDB",
+      "Django"
+    ],
     "tag": "Inventory & Stock Monitoring"
   }
 ]
