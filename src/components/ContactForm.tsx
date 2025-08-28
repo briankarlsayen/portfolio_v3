@@ -76,28 +76,35 @@ function ContactForm() {
         {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
         <div>
           <ul className="flex pt-4">
-            <li className="social-icon">
+            <li className="relative group">
               <a href="https://github.com/briankarlsayen" target="__blank">
-                <span>
-                  <FaGithub />
+                <span className="social-icon">
+                  <FaGithub size={28} />
                 </span>
+                <span className="social-tooltip">Github</span>
               </a>
             </li>
-            <li className="social-icon">
+            <li className="relative group">
               <a
                 href="https://www.linkedin.com/in/briankarlsayen/"
                 target="__blank"
               >
-                <span>
-                  <FaLinkedin />
+                <span className="social-icon">
+                  <FaLinkedin size={28} />
                 </span>
+                <span className="social-tooltip">Linkedin</span>
               </a>
             </li>
-            <li className="social-icon">
-              <a href="https://www.instagram.com/briansayen/" target="__blank">
-                <span>
-                  <RiInstagramFill />
+            <li className="relative group">
+              <a
+                href="https://www.instagram.com/briansayen/"
+                target="__blank"
+                className="inline-block"
+              >
+                <span className="social-icon">
+                  <RiInstagramFill size={28} />
                 </span>
+                <span className="social-tooltip">Instagram</span>
               </a>
             </li>
           </ul>

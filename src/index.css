@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -26,20 +27,20 @@
 
 @layer base {
   h1 {
-    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary-font dark:text-primary-font-dark;
+    @apply font-['Montserrat'] text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary-font dark:text-primary-font-dark;
   }
   h2 {
-    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary-font dark:text-primary-font-dark;
+    @apply font-['Montserrat'] text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary-font dark:text-primary-font-dark;
   }
   h3 {
-    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary-font dark:text-primary-font-dark;
+    @apply font-['Montserrat'] text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary-font dark:text-primary-font-dark;
   }
   h4 {
-    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary-font dark:text-primary-font-dark;
+    @apply font-['Montserrat'] text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary-font dark:text-primary-font-dark;
   }
   p,
   li {
-    @apply text-sm sm:text-base text-primary-font dark:text-primary-font-dark;
+    @apply font-['Montserrat'] text-sm sm:text-base text-primary-font dark:text-primary-font-dark;
   }
   /* div {
     @apply bg-primary dark:bg-primary-dark;
@@ -48,7 +49,7 @@
 
 @layer components {
   .hero-text {
-    @apply text-primary-font dark:text-primary-font-dark md:text-[5rem] sm:text-[3.5rem] text-[2rem];
+    @apply text-primary-font dark:text-primary-font-dark md:text-[5rem] sm:text-[3.5rem] text-[2rem] font-bold;
   }
   .app-bg {
     @apply bg-white dark:bg-gray-600;
@@ -82,5 +83,8 @@
 }
 
 .social-icon {
-  @apply p-2 text-3xl text-primary-font dark:text-primary-font-dark hover:text-[#868686] hover:dark:text-[#919191] cursor-pointer transform transition-transform duration-600  hover:rotate-360 ease-[cubic-bezier(0.55,0.05,0.795,0.035)];
+  @apply text-3xl text-primary-font dark:text-primary-font-dark hover:text-[#868686] hover:dark:text-[#919191] p-2 inline-block transform transition-transform duration-600 hover:rotate-360 ease-[cubic-bezier(0.55,0.05,0.795,0.035)];
+}
+.social-tooltip {
+  @apply absolute left-1/2 -translate-x-1/2 bottom-full hidden group-hover:block dark:bg-gray-500 bg-gray-800 text-white text-xs px-2 py-1 rounded shadow-lg;
 }

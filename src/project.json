@@ -22,7 +22,7 @@
     "website": "https://github.com/briankarlsayen/frugio",
     "imageSrc": ["./images/frugio-img.png", "./images/frugio-img2.png"],
     "techs": ["ReactNative", "SQLite"],
-    "tag": "Budget tracking"
+    "tag": "Budget tracker"
   },
   {
     "name": "Silong",

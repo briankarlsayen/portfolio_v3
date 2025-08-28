@@ -19,7 +19,9 @@ function Home() {
             </div>
             <div className="pt-4">
               <NavLink to="/projects">
-                <span className="btn btn-primary py-2">See my work</span>
+                <span className="btn btn-primary py-2 md:py-3 text-xs md:text-base">
+                  See my work
+                </span>
               </NavLink>
             </div>
           </div>
