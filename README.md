@@ -1,17 +1,29 @@
-##Pages
+# Portfolio V3
 
-- home
-- projects
-  --- projects/:id
+My newest portfolio for anyone to see :3
 
-home page
-navbar > hero > technologies > project > email contact > footer
+## Features
 
-project page
-navbar > title > description > image > technologies > footer
+- Home page, Project page, Contact Page
+- Featured projects
 
-#functions
+## Tech Stacks
 
-- mobile responsive
-- light / dark
-- email sending
+- **Framework**: ReactJS(frontend)
+- **Styling**: Tailwindcss v4
+
+## Installation
+
+#### Clone repository
+
+#### Install dependencies
+
+```
+npm install
+```
+
+#### Start application
+
+```
+npm run dev
+```
